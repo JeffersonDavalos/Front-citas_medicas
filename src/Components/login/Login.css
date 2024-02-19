@@ -1,0 +1,94 @@
+body {
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background: url('../Imagenes/login.png') no-repeat center center fixed; /* Establece la imagen como fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+}
+
+.wrapper {
+    width: 420px;
+    position: absolute; /* Establece la posición absoluta */
+    top: 10%; /* Coloca el formulario en la mitad de la pantalla verticalmente */
+    left: 15%;  /* Centra el formulario horizontalmente */
+    background-color: rgba(2, 255, 255, 0.7); /* Añade un fondo semitransparente al formulario */
+    border-radius: 10px;
+    padding: 30px 50px;
+    text-align: left;
+    
+     /* Mueve todo el contenido a la derecha */
+}
+
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center; /* Alinea el título al centro */
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    text-align: left; /* Alinea el contenido de los inputs a la izquierda */
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(80%);
+    font-size: 16px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+    text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+.remember-forgot label input {
+    margin-right: 4px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper button {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: left; /* Alinea el contenido a la izquierda */
+    margin: 20px 0 20px;
+}
+
+.register-link p a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
