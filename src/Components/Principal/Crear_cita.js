@@ -30,28 +30,21 @@ const Crear_cita = () => {
         return;
       }
     }
-    
-    // Si pasa la validación, continuar con la lógica de inserción o cualquier otra acción
     message.success('Datos insertados correctamente');
   };
 
   const validarCedula = (cedula) => {
-    // Verificar la longitud
     if (cedula.length !== 10) {
       return false;
     }
-  
-    // Verificar que todos los caracteres sean dígitos
+
     if (!/^\d+$/.test(cedula)) {
       return false;
     }
-  
-    // Verificar que no todos los dígitos sean iguales
+
     if (/^(\d)\1+$/.test(cedula)) {
       return false;
     }
-  
-    // Aplicar el algoritmo de Módulo 10 para verificar los dígitos verificadores
     const digitos = cedula.split('').map(Number);
     const verificador = digitos.pop();
     const suma = digitos.reduce((acc, curr, idx) => {
@@ -66,9 +59,7 @@ const Crear_cita = () => {
   };
   
   const validarRUC = (ruc) => {
-    // Implementa aquí la lógica de validación de RUC
-    // Retorna true si es válido, false si no lo es
-    return true; // Ejemplo: siempre retorna true para fines de demostración
+    return true; 
   };
 
   return (

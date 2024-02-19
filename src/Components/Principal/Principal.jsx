@@ -15,9 +15,6 @@ const Principal = () => {
   const [endpoint, setEndpoint] = useState('');
 
   useEffect(() => {
-    // Aquí puedes realizar cualquier lógica para obtener el valor de `endpoint`
-    // Por ejemplo, si `endpoint` viene de props, puedes inicializarlo de la siguiente manera:
-    // setEndpoint(props.endpoint);
     setEndpoint('{{endpoint}}/api/clinic-history/');
     console.log('Valor del endpoint:', endpoint);
   }, []);
