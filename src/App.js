@@ -5,6 +5,7 @@ import CrearCita from './Components/Principal/Crear_cita';
 import Calendario from './Components/Principal/Calendario';
 import Principal from './Components/Principal/Principal';
 import Consultarcitas from './Components/Principal/Consultarcitas';
+//import './App.css';
 
 const App = () => {
   return (
