@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import {
   PlusOutlined,
   CalendarOutlined,
-  SearchOutlined
+  SearchOutlined,
+  UserOutlined
 } from '@ant-design/icons';
 import './Principal.css';
 
@@ -29,6 +30,9 @@ const Principal = () => {
       >
         <div className='logo' />
         <Menu theme='dark' mode='vertical'>
+        <Menu.Item key='logout' icon={<UserOutlined />}>
+            <Link to='/Loginn'>Salir</Link>
+          </Menu.Item>
           <Menu.Item key='crearCita' icon={<PlusOutlined />}>
             <Link to='/crear-cita'>Crear una cita</Link>
           </Menu.Item>

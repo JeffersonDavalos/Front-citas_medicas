@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Layout, Menu, Select, Form, Row, Col, Input, Button, message } from 'antd';
 import { Card } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { PlusOutlined, CalendarOutlined, SaveOutlined,SearchOutlined  } from '@ant-design/icons';
-import './Principal.css';
+import { PlusOutlined, CalendarOutlined, SaveOutlined,SearchOutlined ,UserOutlined } from '@ant-design/icons';
+import './Crear_cita.css';
 
 const { Header, Content, Sider } = Layout;
 const { Option } = Select;
@@ -74,6 +74,9 @@ const Crear_cita = () => {
       >
         <div className='logo' />
         <Menu theme='dark' mode='vertical'>
+        <Menu.Item key='logout' icon={<UserOutlined />}>
+            <Link to='/Loginn'>Salir</Link>
+          </Menu.Item>
           <Menu.Item key='crearCita' icon={<PlusOutlined />}>
             <Link to='/crear-cita'>Crear una cita</Link>
           </Menu.Item>
@@ -87,25 +90,17 @@ const Crear_cita = () => {
       </Sider>
       <Layout>
         <Content>
-          <div style={{ display: "flex", flexDirection: "column", padding: '16px' }}>
+        <h2 className="text-left font-medium mb-3">Ingrese datos paciente</h2>
+        <div className='form-container'>
+            <div className='form-content'>
             <Form layout="vertical">
-              <h2 className="text-left font-medium mb-3">Ingrese datos paciente</h2>
+    
+              <Form>
               <Card>
                 <div style={{ padding: '16px' }}>
-                  <Row gutter={16}>
-                    <Col md={8} lg={6}>
-                      <Form.Item label="Periodo:">
-                        <Select
-                          allowClear
-                          placeholder="SELECCIONE PERIODO"
-                          onChange={(value) => handlePeriodChange(value)}
-                        >
-                          <Option value="diario">Diario</Option>
-                          <Option value="semanal">Semanal</Option>
-                          <Option value="mensual">Mensual</Option>
-                          <Option value="anual">Anual</Option>
-                        </Select>
-                      </Form.Item>
+                  <Row gutter={[16,6]}>
+                    <Col md={18} lg={16}>
+                   
                       <Form.Item
                         label="Cédula / RUC:"
                         name="cedulaRUC"
@@ -186,22 +181,28 @@ const Crear_cita = () => {
                     </Col>
                   </Row>
                   <Row justify="end">
-                    <Col>
-                      <Button
-                        className="ml-2"
-                        htmlType="submit"
-                        style={{ backgroundColor: 'blue', borderColor: 'blue', color: 'white', marginTop: '32px' }}
-                        onClick={handleInsertarClick}
-                      >
-                        <SaveOutlined />
-                        Insertar
-                      </Button>
-                    </Col>
+                 
                   </Row>
                 </div>
               </Card>
+              
+            </Form>
+            
+            <Button
+    className="ml-2 float-right" // O puedes usar "text-right" en lugar de "float-right"
+    htmlType="submit"
+    style={{ backgroundColor: 'blue', borderColor: 'blue', color: 'white', marginTop: '32px' }}
+    onClick={handleInsertarClick}
+>
+    <SaveOutlined />
+    Insertar
+</Button>
+
+                   
             </Form>
           </div>
+          </div>
+
         </Content>
       </Layout>
     </Layout>
