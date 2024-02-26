@@ -15,6 +15,8 @@ const App = () => {
         <Route path="/crear-cita" element={<CrearCita />} />
         <Route path="/calendario" element={<Calendario />} /> 
         <Route path="/consultarCita" element={<Consultarcitas />} /> 
+        <Route path="/Loginn" element={<Login />} /> 
+
 
       </Routes>
     </Router>
