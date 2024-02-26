@@ -1,0 +1,17 @@
+Actividades realizadas por los integrantes:
+
+Katty Milena Cortez Paredes: Encargada de diseñar y desarrollar la interfaz de usuario utilizando los
+componentes de la librería antd y aplicar estilos CSS para personalizar la apariencia.
+
+Jefferson Ismael Dávalos Carrera: Responsable de implementar la lógica de validación de datos en el
+formulario, incluyendo las funciones validarCedula y validarRUC.
+
+Guido Roberto Gutiérrez Mora: Encargado de definir y gestionar el estado local del componente utilizando
+la función useState y manejar los eventos de cambio en los valores de los campos de entrada.
+
+David Antonio Bruno Rivadeneira: Responsable de implementar las funciones de manejo de eventos,
+como handlePeriodChange y handleInsertarClick, para manejar los eventos de cambio y clic en los
+botones.
+
+Edison Israel Salazar Chunga: Encargado de integrar el componente de React con otras partes de la
+aplicación
